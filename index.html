@@ -1,33 +1,47 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
 
-    <!-- Responsive viewport -->
+    <!-- Responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO -->
     <title>Priyabrata Patra | Web Developer Portfolio</title>
-    <meta name="description"
-          content="Priyabrata Patra's portfolio showcasing accessible, responsive web development projects, technical skills and practical work.">
+
+    <meta
+        name="description"
+        content="Priyabrata Patra's portfolio showcasing accessible, responsive web development projects, technical skills and practical work."
+    >
+
     <meta name="author" content="Priyabrata Patra">
     <meta name="robots" content="index, follow">
 
-    <!-- Canonical -->
-    <link rel="canonical"
-          href="https://priyabratacare-source.github.io/portfolio/">
+    <!-- Canonical URL -->
+    <link
+        rel="canonical"
+        href="https://priyabratacare-source.github.io/portfolio/"
+    >
 
     <!-- Open Graph -->
-    <meta property="og:title"
-          content="Priyabrata Patra | Web Developer Portfolio">
-    <meta property="og:description"
-          content="Explore Priyabrata Patra's web development projects, skills and practical work.">
-    <meta property="og:type" content="website">
-    <meta property="og:url"
-          content="https://priyabratacare-source.github.io/portfolio/">
+    <meta
+        property="og:title"
+        content="Priyabrata Patra | Web Developer Portfolio"
+    >
 
-    <!-- Performance -->
+    <meta
+        property="og:description"
+        content="Explore Priyabrata Patra's web development projects, technical skills and practical work."
+    >
+
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:url"
+        content="https://priyabratacare-source.github.io/portfolio/"
+    >
+
+    <!-- Mobile browser theme -->
     <meta name="theme-color" content="#2563EB">
 
     <!-- Main stylesheet -->
@@ -36,29 +50,39 @@
 
 <body>
 
-    <!-- Accessibility: Skip navigation -->
+    <!-- Skip navigation for keyboard and screen-reader users -->
     <a class="skip-link" href="#main-content">
         Skip to main content
     </a>
 
+
+    <!-- ================= HEADER ================= -->
+
     <header class="site-header">
+
         <div class="container header-inner">
 
             <a
                 class="logo"
                 href="index.html"
-                aria-label="Priyabrata Patra - Home"
+                aria-label="Priyabrata Patra home"
             >
                 PP<span aria-hidden="true">.</span>
             </a>
+
 
             <nav
                 class="main-navigation"
                 aria-label="Primary navigation"
             >
+
                 <ul>
+
                     <li>
-                        <a href="index.html" aria-current="page">
+                        <a
+                            href="index.html"
+                            aria-current="page"
+                        >
                             Home
                         </a>
                     </li>
@@ -86,34 +110,46 @@
                             Contact
                         </a>
                     </li>
+
                 </ul>
+
             </nav>
 
         </div>
+
     </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
 
     <main id="main-content">
 
-        <!-- Hero -->
+
+        <!-- ================= HERO ================= -->
+
         <section
             class="hero"
             aria-labelledby="hero-title"
         >
+
             <div class="container hero-content">
 
                 <p class="eyebrow">
                     Web Development Portfolio
                 </p>
 
+
                 <h1 id="hero-title">
                     Hello, I'm
                     <span>Priyabrata Patra</span>
                 </h1>
 
+
                 <p class="hero-description">
                     I build accessible, responsive and user-focused
                     web experiences using modern web technologies.
                 </p>
+
 
                 <div class="button-group">
 
@@ -123,6 +159,7 @@
                     >
                         View My Projects
                     </a>
+
 
                     <a
                         class="button secondary-button"
@@ -134,13 +171,17 @@
                 </div>
 
             </div>
+
         </section>
 
-        <!-- Introduction -->
+
+        <!-- ================= INTRODUCTION ================= -->
+
         <section
             class="section"
             aria-labelledby="introduction-title"
         >
+
             <div class="container">
 
                 <header class="section-header">
@@ -155,56 +196,81 @@
 
                 </header>
 
+
                 <div class="content-grid">
 
+
                     <article class="card">
-                        <h3>Accessible</h3>
+
+                        <h3>
+                            Accessible
+                        </h3>
 
                         <p>
                             I focus on creating websites that are
                             usable with keyboards, screen readers
                             and assistive technologies.
                         </p>
+
                     </article>
+
 
                     <article class="card">
-                        <h3>Responsive</h3>
+
+                        <h3>
+                            Responsive
+                        </h3>
 
                         <p>
-                            My interfaces are designed to work across
-                            desktops, tablets and mobile devices.
+                            My interfaces are designed to work
+                            smoothly across desktops, tablets
+                            and mobile devices.
                         </p>
+
                     </article>
+
 
                     <article class="card">
-                        <h3>Semantic</h3>
+
+                        <h3>
+                            Semantic
+                        </h3>
 
                         <p>
-                            I use meaningful HTML5 elements to create
-                            structured and maintainable web pages.
+                            I use meaningful HTML5 elements to
+                            create structured, accessible and
+                            maintainable web pages.
                         </p>
+
                     </article>
+
 
                 </div>
 
             </div>
+
         </section>
 
-        <!-- Call to Action -->
+
+        <!-- ================= CALL TO ACTION ================= -->
+
         <aside
             class="cta-section"
             aria-labelledby="cta-title"
         >
+
             <div class="container">
 
                 <h2 id="cta-title">
                     Have a project in mind?
                 </h2>
 
+
                 <p>
-                    Let's build something useful and accessible
-                    together.
+                    Let's build something useful and
+                    accessible together.
                 </p>
+
 
                 <a
                     class="button primary-button"
@@ -214,36 +280,54 @@
                 </a>
 
             </div>
+
         </aside>
 
+
     </main>
+
+
+    <!-- ================= FOOTER ================= -->
 
     <footer class="site-footer">
 
         <div class="container footer-inner">
+
 
             <p>
                 &copy; 2026 Priyabrata Patra.
                 All rights reserved.
             </p>
 
-            <nav aria-label="Footer navigation">
+
+            <nav
+                aria-label="Footer navigation"
+            >
 
                 <ul>
+
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="about.html">
+                            About
+                        </a>
                     </li>
 
                     <li>
-                        <a href="projects.html">Projects</a>
+                        <a href="projects.html">
+                            Projects
+                        </a>
                     </li>
 
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.html">
+                            Contact
+                        </a>
                     </li>
+
                 </ul>
 
             </nav>
+
 
         </div>
 
@@ -251,4 +335,3 @@
 
 </body>
 </html>
-```

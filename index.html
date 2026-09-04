@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +15,7 @@
 
     <meta
         name="description"
-        content="Personal portfolio of Priyabrata Patra, showcasing web development projects, technical skills, education and professional journey."
+        content="Priyabrata Patra's portfolio showcasing accessible, responsive web development projects, technical skills and practical work."
     >
 
     <meta
@@ -35,12 +35,12 @@
 
     <meta
         property="og:title"
-        content="Priyabrata Patra | Web Developer"
+        content="Priyabrata Patra | Web Developer Portfolio"
     >
 
     <meta
         property="og:description"
-        content="Explore my web development portfolio, projects and technical skills."
+        content="Explore Priyabrata Patra's web development projects, technical skills and practical work."
     >
 
     <meta
@@ -68,7 +68,7 @@
 
 <body>
 
-    <!-- Skip link -->
+    <!-- Skip navigation -->
     <a
         class="skip-link"
         href="#main-content"
@@ -79,13 +79,9 @@
 
     <!-- ================= HEADER ================= -->
 
-    <header
-        class="site-header"
-        role="banner"
-    >
+    <header class="site-header">
 
         <div class="container header-inner">
-
 
             <!-- Logo -->
 
@@ -98,23 +94,9 @@
             </a>
 
 
-            <!-- Mobile menu button -->
-
-            <button
-                class="mobile-menu-button"
-                type="button"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-                aria-controls="primary-navigation"
-            >
-                <span aria-hidden="true">⋮</span>
-            </button>
-
-
-            <!-- Navigation -->
+            <!-- Primary Navigation -->
 
             <nav
-                id="primary-navigation"
                 class="main-navigation"
                 aria-label="Primary navigation"
             >
@@ -163,15 +145,12 @@
     </header>
 
 
-    <!-- ================= MAIN ================= -->
+    <!-- ================= MAIN CONTENT ================= -->
 
-    <main
-        id="main-content"
-        role="main"
-    >
+    <main id="main-content">
 
 
-        <!-- Hero -->
+        <!-- ================= HERO ================= -->
 
         <section
             class="hero"
@@ -184,10 +163,12 @@
                     Web Development Portfolio
                 </p>
 
+
                 <h1 id="hero-title">
                     Hello, I'm
                     <span>Priyabrata Patra</span>
                 </h1>
+
 
                 <p class="hero-description">
                     I build accessible, responsive and user-focused
@@ -218,7 +199,7 @@
         </section>
 
 
-        <!-- Introduction -->
+        <!-- ================= INTRODUCTION ================= -->
 
         <section
             class="section"
@@ -293,7 +274,7 @@
         </section>
 
 
-        <!-- Call to Action -->
+        <!-- ================= CALL TO ACTION ================= -->
 
         <aside
             class="cta-section"
@@ -327,10 +308,7 @@
 
     <!-- ================= FOOTER ================= -->
 
-    <footer
-        class="site-footer"
-        role="contentinfo"
-    >
+    <footer class="site-footer">
 
         <div class="container footer-inner">
 
@@ -372,97 +350,7 @@
 
     </footer>
 
-
-    <!-- ================= MOBILE MENU ================= -->
-
-    <script>
-        (() => {
-            const button = document.querySelector(".mobile-menu-button");
-            const navigation = document.querySelector("#primary-navigation");
-
-            if (!button || !navigation) return;
-
-            button.addEventListener("click", () => {
-
-                const isOpen =
-                    button.getAttribute("aria-expanded") === "true";
-
-                button.setAttribute(
-                    "aria-expanded",
-                    String(!isOpen)
-                );
-
-                button.setAttribute(
-                    "aria-label",
-                    isOpen
-                        ? "Open navigation menu"
-                        : "Close navigation menu"
-                );
-
-                navigation.classList.toggle(
-                    "menu-open",
-                    !isOpen
-                );
-
-            });
-
-
-            /* Close menu after selecting a link */
-
-            navigation.querySelectorAll("a").forEach(link => {
-
-                link.addEventListener("click", () => {
-
-                    button.setAttribute(
-                        "aria-expanded",
-                        "false"
-                    );
-
-                    button.setAttribute(
-                        "aria-label",
-                        "Open navigation menu"
-                    );
-
-                    navigation.classList.remove(
-                        "menu-open"
-                    );
-
-                });
-
-            });
-
-
-            /* Close menu with Escape */
-
-            document.addEventListener("keydown", event => {
-
-                if (
-                    event.key === "Escape" &&
-                    button.getAttribute("aria-expanded") === "true"
-                ) {
-
-                    button.setAttribute(
-                        "aria-expanded",
-                        "false"
-                    );
-
-                    button.setAttribute(
-                        "aria-label",
-                        "Open navigation menu"
-                    );
-
-                    navigation.classList.remove(
-                        "menu-open"
-                    );
-
-                    button.focus();
-                }
-
-            });
-
-        })();
-    </script>
-
 </body>
 
 </html>
+```

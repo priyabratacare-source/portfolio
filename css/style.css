@@ -50,7 +50,6 @@ ul {
   list-style: none;
 }
 
-/* Skip link */
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -79,7 +78,7 @@ ul {
   padding: 0 1.25rem;
 }
 
-/* ========== HEADER ========== */
+/* ========== HEADER (Flexbox) ========== */
 .site-header {
   position: sticky;
   top: 0;
@@ -138,7 +137,6 @@ ul {
   transition: var(--transition);
 }
 
-/* Theme toggle */
 .theme-toggle {
   display: inline-flex;
   align-items: center;
@@ -157,7 +155,7 @@ ul {
   background-color: var(--bg-secondary);
 }
 
-/* Navigation (mobile-first: hidden) */
+/* Navigation (Mobile-first: hidden) */
 .main-navigation {
   position: fixed;
   top: 70px;
@@ -199,7 +197,7 @@ ul {
   color: white;
 }
 
-/* ========== BUTTONS ========== */
+/* ========== BUTTONS (Flexbox) ========== */
 .button-group {
   display: flex;
   flex-wrap: wrap;
@@ -317,7 +315,25 @@ ul {
   margin-bottom: 1rem;
 }
 
-/* Footer */
+/* ========== CTA ========== */
+.cta-section {
+  padding: 3rem 0;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-section p {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+/* ========== FOOTER (Flexbox) ========== */
 .site-footer {
   background: var(--bg);
   border-top: 1px solid var(--border);
@@ -365,6 +381,10 @@ ul {
   .content-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .cta-section {
+    text-align: left;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -375,63 +395,9 @@ ul {
   .hero {
     padding: 6rem 0;
   }
-}
 
-/* ==================================================
-   PAGE HEADER (for About/Projects/Contact pages)
-   ================================================== */
-.page-header {
-  padding: 3rem 0;
-  background: var(--bg-secondary);
-  border-bottom: 1px solid var(--border);
-}
-
-.page-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.page-header p {
-  font-size: 1.1rem;
-  color: var(--text-muted);
-}
-
-/* Contact form (assuming it's on contact.html) */
-.form-group {
-  margin-bottom: 1.25rem;
-}
-
-.form-group label {
-  display: block;
-  font-weight: 500;
-  margin-bottom: 0.4rem;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 0.8rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--bg);
-  color: var(--text);
-  transition: border-color 0.2s;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--primary);
-}
-
-.contact-layout {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
-
-@media (min-width: 768px) {
-  .contact-layout {
-    grid-template-columns: 1fr 2fr;
+  .footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

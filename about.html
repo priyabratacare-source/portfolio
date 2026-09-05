@@ -1,106 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Priyabrata Patra</title>
-    <meta name="description" content="Learn about Priyabrata Patra, a first-year B.Tech Civil Engineering student interested in BIM, AutoCAD, Revit, web development and technology.">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Priyabrata Patra">
-    <meta property="og:title" content="About Priyabrata Patra">
-    <meta property="og:description" content="Civil Engineering student and technology enthusiast.">
-    <meta property="og:type" content="website">
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About | Personal Portfolio</title>
+<meta name="description" content="Accessible, responsive personal portfolio website.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#2563eb">
+<link rel="canonical" href="https://example.com/about.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About | Personal Portfolio">
+<meta property="og:description" content="Accessible, responsive personal portfolio website.">
+<meta property="og:url" content="https://example.com/">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
 </head>
 <body>
-
 <a class="skip-link" href="#main-content">Skip to main content</a>
-
-<header class="site-header">
-    <nav class="navbar" aria-label="Main navigation">
-        <div class="nav-container">
-            <div class="nav-title">
-                <a href="index.html" aria-label="Priyabrata Patra home">PP<span style="color: var(--primary);">.</span></a>
-            </div>
-            <div class="header-actions">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-                <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-menu">☰</button>
-            </div>
-            <ul class="nav-menu" id="main-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" aria-current="page">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
-
-<main id="main-content">
-    <section class="about-hero section" aria-labelledby="about-title">
-        <div class="container">
-            <div class="about-logo" aria-label="Priyabrata Patra logo">PP</div>
-            <div class="profile-image-wrapper">
-                <img src="https://i.ibb.co/RT0CSwpc/Chat-GPT-Image-Sep-2-2026-03-51-53-PM.png" alt="Portrait of Priyabrata Patra" class="profile-image">
-            </div>
-            <p class="section-label">About Me</p>
-            <h1 id="about-title">Priyabrata Patra</h1>
-            <p class="profile-role">B.Tech Student — Civil Engineering</p>
-            <div class="about-text">
-                <p>I am a first-year B.Tech student pursuing Civil Engineering, with a strong interest in technology, web development, BIM, and innovative engineering solutions. I enjoy combining my engineering knowledge with programming to build practical and user-focused digital projects.</p>
-                <p>I am continuously developing my skills in programming, web technologies, problem-solving, and engineering concepts through hands-on projects and self-learning. I believe in learning by building, experimenting with new technologies, and turning ideas into meaningful solutions.</p>
-                <p>My goal is to grow as a well-rounded engineer and technology enthusiast while creating innovative projects that can make a real-world impact.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="education-section section" aria-labelledby="education-title">
-        <div class="container">
-            <p class="section-label">Education</p>
-            <h2 id="education-title">Civil Engineering</h2>
-            <article class="education-card">
-                <h3>B.Tech in Civil Engineering</h3>
-                <p>Currently pursuing a B.Tech in Civil Engineering, building a strong foundation in structural concepts, engineering mathematics, and core technical principles.</p>
-                <p>Alongside my engineering studies, I am focused on developing practical knowledge in programming, web development, technology, and problem-solving.</p>
-            </article>
-        </div>
-    </section>
-
-    <section class="about-focus section" aria-labelledby="focus-title">
-        <div class="container">
-            <h2 id="focus-title">What I Focus On</h2>
-            <div class="feature-grid">
-                <article class="feature-card">
-                    <h3>Engineering</h3>
-                    <p>Developing strong foundations in Civil Engineering and technical concepts.</p>
-                </article>
-                <article class="feature-card">
-                    <h3>Technology</h3>
-                    <p>Exploring modern web technologies and practical digital solutions.</p>
-                </article>
-                <article class="feature-card">
-                    <h3>Innovation</h3>
-                    <p>Turning ideas into useful projects through experimentation and hands-on learning.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-</main>
-
-<footer class="site-footer">
-    <div class="container footer-content">
-        <p>&copy; 2026 Priyabrata Patra. All rights reserved.</p>
-        <nav aria-label="Footer navigation">
-            <ul class="footer-links">
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+<header class="site-header" role="banner"><div class="container nav">
+<a class="brand" href="index.html" aria-label="Personal Portfolio home">My Portfolio</a>
+<nav aria-label="Primary navigation">
+<button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-navigation" aria-expanded="false">Menu</button>
+<ul class="nav-list" id="primary-navigation" data-open="false"><li><a href="index.html" >Home</a></li><li><a href="about.html" aria-current="page">About</a></li><li><a href="projects.html" >Projects</a></li><li><a href="skills.html" >Skills</a></li><li><a href="contact.html" >Contact</a></li></ul>
+</nav>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">◐</button>
+</div></header>
+<main id="main-content" tabindex="-1"><section class="page-title"><div class="container"><p class="eyebrow">About</p><h1>About me</h1><p class="lead">Replace this text with your personal introduction, education, experience and goals.</p></div></section>
+<section class="section"><div class="container grid two-col"><article class="card"><h2>My journey</h2><p>I enjoy turning ideas into practical digital experiences. Add your story here: what you study, what you build, and what you want to learn next.</p><p>I value clean structure, usability and continuous learning.</p></article><aside class="card"><h2>Skills</h2><ul class="badges"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive Design</li><li>Git</li><li>Accessibility</li></ul></aside></div></section></main>
+<footer class="site-footer"><div class="container footer-inner"><span>© 2026 My Portfolio</span><span>Built with semantic HTML5 & CSS3.</span></div></footer>
+</body></html>

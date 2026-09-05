@@ -1,105 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills | Priyabrata Patra</title>
-    <meta name="description" content="Technical skills of Priyabrata Patra including HTML5, CSS3, JavaScript, Node.js, Cloudflare Workers, Firebase, GitHub and development tools.">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Priyabrata Patra">
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skills | Personal Portfolio</title>
+<meta name="description" content="Accessible, responsive personal portfolio website.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#2563eb">
+<link rel="canonical" href="https://example.com/skills.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Skills | Personal Portfolio">
+<meta property="og:description" content="Accessible, responsive personal portfolio website.">
+<meta property="og:url" content="https://example.com/">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
 </head>
 <body>
-
 <a class="skip-link" href="#main-content">Skip to main content</a>
-
-<header class="site-header">
-    <nav class="navbar" aria-label="Main navigation">
-        <div class="nav-container">
-            <div class="nav-title">
-                <a href="index.html">PP<span style="color: var(--primary);">.</span></a>
-            </div>
-            <div class="header-actions">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-                <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-menu">☰</button>
-            </div>
-            <ul class="nav-menu" id="main-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html" aria-current="page">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
-
-<main id="main-content">
-    <section class="page-heading section" aria-labelledby="skills-title">
-        <div class="container">
-            <p class="section-label">Technical Knowledge</p>
-            <h1 id="skills-title">Skills</h1>
-            <p>Technologies, development skills and tools I am learning and using through practical projects.</p>
-        </div>
-    </section>
-
-    <section class="skills-section section">
-        <div class="container">
-            <div class="skills-grid">
-                <article class="skill-card">
-                    <h2>Frontend</h2>
-                    <ul class="skill-list">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>Responsive Design</li>
-                        <li>Semantic HTML</li>
-                    </ul>
-                </article>
-
-                <article class="skill-card">
-                    <h2>Backend</h2>
-                    <ul class="skill-list">
-                        <li>Node.js</li>
-                        <li>Cloudflare Workers</li>
-                        <li>Firebase</li>
-                    </ul>
-                </article>
-
-                <article class="skill-card">
-                    <h2>Database</h2>
-                    <ul class="skill-list">
-                        <li>Cloudflare D1</li>
-                    </ul>
-                </article>
-
-                <article class="skill-card">
-                    <h2>Tools</h2>
-                    <ul class="skill-list">
-                        <li>Figma</li>
-                        <li>GitHub</li>
-                        <li>VS Code</li>
-                        <li>Cloud Hosting</li>
-                    </ul>
-                </article>
-            </div>
-        </div>
-    </section>
-</main>
-
-<footer class="site-footer">
-    <div class="container footer-content">
-        <p>&copy; 2026 Priyabrata Patra. All rights reserved.</p>
-        <nav aria-label="Footer navigation">
-            <ul class="footer-links">
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+<header class="site-header" role="banner"><div class="container nav">
+<a class="brand" href="index.html" aria-label="Personal Portfolio home">My Portfolio</a>
+<nav aria-label="Primary navigation">
+<button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-navigation" aria-expanded="false">Menu</button>
+<ul class="nav-list" id="primary-navigation" data-open="false"><li><a href="index.html" >Home</a></li><li><a href="about.html" >About</a></li><li><a href="projects.html" >Projects</a></li><li><a href="skills.html" aria-current="page">Skills</a></li><li><a href="contact.html" >Contact</a></li></ul>
+</nav>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">◐</button>
+</div></header>
+<main id="main-content" tabindex="-1"><section class="page-title"><div class="container"><p class="eyebrow">Capabilities</p><h1>Skills</h1><p class="lead">Organize your technical skills into clear, scannable categories.</p></div></section>
+<section class="section"><div class="container grid cards"><article class="card"><h2>Frontend</h2><ul class="badges"><li>HTML5</li><li>CSS Grid</li><li>Flexbox</li><li>JavaScript</li><li>Responsive UI</li></ul></article><article class="card"><h2>Tools</h2><ul class="badges"><li>Git</li><li>GitHub</li><li>VS Code</li><li>Browser DevTools</li></ul></article><article class="card"><h2>Principles</h2><ul class="badges"><li>Accessibility</li><li>SEO</li><li>Performance</li><li>Progressive Enhancement</li></ul></article></div></section></main>
+<footer class="site-footer"><div class="container footer-inner"><span>© 2026 My Portfolio</span><span>Built with semantic HTML5 & CSS3.</span></div></footer>
+</body></html>

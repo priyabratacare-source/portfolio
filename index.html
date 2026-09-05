@@ -1,103 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priyabrata Patra | Engineering & Web Development Portfolio</title>
-    <meta name="description" content="Priyabrata Patra is a first-year B.Tech Civil Engineering student interested in web development, technology and innovative engineering solutions.">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Priyabrata Patra">
-    <meta property="og:title" content="Priyabrata Patra | Portfolio">
-    <meta property="og:description" content="Engineering student and technology enthusiast building practical digital projects.">
-    <meta property="og:type" content="website">
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Personal Portfolio</title>
+<meta name="description" content="Accessible, responsive personal portfolio website.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#2563eb">
+<link rel="canonical" href="https://example.com/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Home | Personal Portfolio">
+<meta property="og:description" content="Accessible, responsive personal portfolio website.">
+<meta property="og:url" content="https://example.com/">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
 </head>
 <body>
-
 <a class="skip-link" href="#main-content">Skip to main content</a>
-
-<header class="site-header">
-    <nav class="navbar" aria-label="Main navigation">
-        <div class="nav-container">
-            <div class="nav-title">
-                <a href="index.html" aria-label="Priyabrata Patra home">PP<span style="color: var(--primary);">.</span></a>
-            </div>
-
-            <div class="header-actions">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-                <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-menu">☰</button>
-            </div>
-
-            <ul class="nav-menu" id="main-menu">
-                <li><a href="index.html" aria-current="page">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
-
-<main id="main-content">
-    <section class="hero" aria-labelledby="hero-title">
-        <div class="container hero-content">
-            <p class="eyebrow">Engineering &amp; Web Development Portfolio</p>
-            <h1 id="hero-title">Hello, I'm Priyabrata Patra</h1>
-            <p class="hero-text">I am a first-year B.Tech Civil Engineering student with a strong interest in technology, web development, programming, and innovative engineering solutions.</p>
-            <div class="hero-buttons">
-                <a class="button primary-button" href="projects.html">View My Projects</a>
-                <a class="button secondary-button" href="contact.html">Contact Me</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="features section" aria-labelledby="features-title">
-        <div class="container">
-            <p class="section-label">Welcome</p>
-            <h2 id="features-title">Building for the Web</h2>
-            <div class="feature-grid">
-                <article class="feature-card">
-                    <span class="feature-icon" aria-hidden="true">♿</span>
-                    <h3>Accessible</h3>
-                    <p>I focus on creating websites that are usable with keyboards, screen readers and assistive technologies.</p>
-                </article>
-                <article class="feature-card">
-                    <span class="feature-icon" aria-hidden="true">📱</span>
-                    <h3>Responsive</h3>
-                    <p>My interfaces are designed to work smoothly across desktops, tablets and mobile devices.</p>
-                </article>
-                <article class="feature-card">
-                    <span class="feature-icon" aria-hidden="true">🧩</span>
-                    <h3>Semantic</h3>
-                    <p>I use meaningful HTML5 elements to create structured, maintainable and accessible web pages.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-section" aria-labelledby="cta-title">
-        <div class="container">
-            <h2 id="cta-title">Have a project in mind?</h2>
-            <p>Let's build something useful, practical and accessible together.</p>
-            <a class="button primary-button" href="contact.html">Get in Touch</a>
-        </div>
-    </section>
-</main>
-
-<footer class="site-footer">
-    <div class="container footer-content">
-        <p>&copy; 2026 Priyabrata Patra. All rights reserved.</p>
-        <nav aria-label="Footer navigation">
-            <ul class="footer-links">
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+<header class="site-header" role="banner"><div class="container nav">
+<a class="brand" href="index.html" aria-label="Personal Portfolio home">My Portfolio</a>
+<nav aria-label="Primary navigation">
+<button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-navigation" aria-expanded="false">Menu</button>
+<ul class="nav-list" id="primary-navigation" data-open="false"><li><a href="index.html" aria-current="page">Home</a></li><li><a href="about.html" >About</a></li><li><a href="projects.html" >Projects</a></li><li><a href="skills.html" >Skills</a></li><li><a href="contact.html" >Contact</a></li></ul>
+</nav>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">◐</button>
+</div></header>
+<main id="main-content" tabindex="-1"><section class="hero"><div class="container hero-grid">
+<div><p class="eyebrow">Personal Portfolio</p><h1>Building useful ideas with code.</h1>
+<p class="lead">A clean, accessible portfolio starter for developers, students, designers, and technology enthusiasts.</p>
+<div class="actions"><a class="button primary" href="projects.html">View projects</a><a class="button" href="contact.html">Contact me</a></div></div>
+<aside class="profile-box" aria-label="Portfolio highlights"><div class="stat">01</div><h2>Focused on the web</h2><p class="muted">Semantic HTML, modern CSS, responsive layouts, accessibility and practical projects.</p></aside>
+</div></section>
+<section class="section"><div class="container"><div class="section-head"><p class="eyebrow">What I do</p><h2>Simple, accessible and responsive.</h2><p class="muted">This starter is designed to be easy to customize without a framework.</p></div>
+<div class="grid cards"><article class="card"><h3>Frontend</h3><p>Semantic HTML5, modern CSS3 and responsive interface architecture.</p></article><article class="card"><h3>Projects</h3><p>Present practical work with clear goals, technologies and outcomes.</p></article><article class="card"><h3>Accessibility</h3><p>Keyboard-friendly interactions, labels, focus states and screen-reader support.</p></article></div></div></section></main>
+<footer class="site-footer"><div class="container footer-inner"><span>© 2026 My Portfolio</span><span>Built with semantic HTML5 & CSS3.</span></div></footer>
+</body></html>

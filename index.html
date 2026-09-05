@@ -1,356 +1,179 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1"
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Priyabrata Patra | Web Developer Portfolio</title>
-
-    <meta
-        name="description"
-        content="Priyabrata Patra's portfolio showcasing accessible, responsive web development projects, technical skills and practical work."
-    >
-
-    <meta
-        name="author"
-        content="Priyabrata Patra"
-    >
-
-    <meta
-        name="robots"
-        content="index, follow"
-    >
-
-    <link
-        rel="canonical"
-        href="https://priyabratacare-source.github.io/portfolio/"
-    >
-
-    <meta
-        property="og:title"
-        content="Priyabrata Patra | Web Developer Portfolio"
-    >
-
-    <meta
-        property="og:description"
-        content="Explore Priyabrata Patra's web development projects, technical skills and practical work."
-    >
-
-    <meta
-        property="og:type"
-        content="website"
-    >
-
-    <meta
-        property="og:url"
-        content="https://priyabratacare-source.github.io/portfolio/"
-    >
-
-    <meta
-        name="theme-color"
-        content="#2563EB"
-    >
-
-    <link
-        rel="stylesheet"
-        href="css/style.css"
-    >
-
+    <meta name="description" content="Priyabrata Patra's portfolio showcasing accessible, responsive web development projects.">
+    <meta name="author" content="Priyabrata Patra">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://priyabratacare-source.github.io/portfolio/">
+    <meta property="og:title" content="Priyabrata Patra | Web Developer Portfolio">
+    <meta property="og:description" content="Explore Priyabrata Patra's web development projects, technical skills and practical work.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://priyabratacare-source.github.io/portfolio/">
+    <meta name="theme-color" content="#2563EB">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
-
     <!-- Skip navigation -->
-    <a
-        class="skip-link"
-        href="#main-content"
-    >
-        Skip to main content
-    </a>
-
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <!-- ================= HEADER ================= -->
-
     <header class="site-header">
-
         <div class="container header-inner">
+            <a class="logo" href="index.html" aria-label="Priyabrata Patra home">PP<span>.</span></a>
 
-            <!-- Logo -->
-
-            <a
-                class="logo"
-                href="index.html"
-                aria-label="Priyabrata Patra home"
-            >
-                PP<span aria-hidden="true">.</span>
-            </a>
-
+            <!-- Actions: theme + hamburger -->
+            <div class="header-actions">
+                <button class="theme-toggle" aria-label="Toggle dark mode" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
 
             <!-- Primary Navigation -->
-
-            <nav
-                class="main-navigation"
-                aria-label="Primary navigation"
-            >
-
+            <nav class="main-navigation" id="primary-nav" aria-label="Primary navigation">
                 <ul>
-
-                    <li>
-                        <a
-                            href="index.html"
-                            aria-current="page"
-                        >
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="about.html">
-                            About
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="projects.html">
-                            Projects
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="skills.html">
-                            Skills
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html">
-                            Contact
-                        </a>
-                    </li>
-
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-
             </nav>
-
         </div>
-
     </header>
 
-
     <!-- ================= MAIN CONTENT ================= -->
-
     <main id="main-content">
-
-
-        <!-- ================= HERO ================= -->
-
-        <section
-            class="hero"
-            aria-labelledby="hero-title"
-        >
-
+        <!-- HERO -->
+        <section class="hero" aria-labelledby="hero-title">
             <div class="container hero-content">
-
-                <p class="eyebrow">
-                    Web Development Portfolio
-                </p>
-
-
+                <p class="eyebrow">Web Development Portfolio</p>
                 <h1 id="hero-title">
-                    Hello, I'm
-                    <span>Priyabrata Patra</span>
+                    Hello, I'm <span>Priyabrata Patra</span>
                 </h1>
-
-
                 <p class="hero-description">
-                    I build accessible, responsive and user-focused
-                    web experiences using modern web technologies.
+                    I build accessible, responsive and user-focused web experiences using modern web technologies.
                 </p>
-
-
                 <div class="button-group">
-
-                    <a
-                        class="button primary-button"
-                        href="projects.html"
-                    >
-                        View My Projects
-                    </a>
-
-                    <a
-                        class="button secondary-button"
-                        href="contact.html"
-                    >
-                        Contact Me
-                    </a>
-
+                    <a class="button primary-button" href="projects.html">View My Projects</a>
+                    <a class="button secondary-button" href="contact.html">Contact Me</a>
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- ================= INTRODUCTION ================= -->
-
-        <section
-            class="section"
-            aria-labelledby="introduction-title"
-        >
-
+        <!-- INTRODUCTION -->
+        <section class="section" aria-labelledby="introduction-title">
             <div class="container">
-
                 <header class="section-header">
-
-                    <p class="eyebrow">
-                        Welcome
-                    </p>
-
-                    <h2 id="introduction-title">
-                        Building for the Web
-                    </h2>
-
+                    <p class="eyebrow">Welcome</p>
+                    <h2 id="introduction-title">Building for the Web</h2>
                 </header>
-
-
                 <div class="content-grid">
-
-
                     <article class="card">
-
-                        <h3>
-                            Accessible
-                        </h3>
-
-                        <p>
-                            I focus on creating websites that are
-                            usable with keyboards, screen readers
-                            and assistive technologies.
-                        </p>
-
+                        <h3>Accessible</h3>
+                        <p>I focus on creating websites that are usable with keyboards, screen readers and assistive technologies.</p>
                     </article>
-
-
                     <article class="card">
-
-                        <h3>
-                            Responsive
-                        </h3>
-
-                        <p>
-                            My interfaces are designed to work across
-                            desktops, tablets and mobile devices.
-                        </p>
-
+                        <h3>Responsive</h3>
+                        <p>My interfaces are designed to work across desktops, tablets and mobile devices.</p>
                     </article>
-
-
                     <article class="card">
-
-                        <h3>
-                            Semantic
-                        </h3>
-
-                        <p>
-                            I use meaningful HTML5 elements to create
-                            structured and maintainable web pages.
-                        </p>
-
+                        <h3>Semantic</h3>
+                        <p>I use meaningful HTML5 elements to create structured and maintainable web pages.</p>
                     </article>
-
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- ================= CALL TO ACTION ================= -->
-
-        <aside
-            class="cta-section"
-            aria-labelledby="cta-title"
-        >
-
+        <!-- CALL TO ACTION -->
+        <aside class="cta-section" aria-labelledby="cta-title">
             <div class="container">
-
-                <h2 id="cta-title">
-                    Have a project in mind?
-                </h2>
-
-                <p>
-                    Let's build something useful and accessible together.
-                </p>
-
-                <a
-                    class="button primary-button"
-                    href="contact.html"
-                >
-                    Get in Touch
-                </a>
-
+                <h2 id="cta-title">Have a project in mind?</h2>
+                <p>Let's build something useful and accessible together.</p>
+                <a class="button primary-button" href="contact.html">Get in Touch</a>
             </div>
-
         </aside>
-
-
     </main>
 
-
     <!-- ================= FOOTER ================= -->
-
     <footer class="site-footer">
-
         <div class="container footer-inner">
-
-            <p>
-                &copy; 2026 Priyabrata Patra.
-                All rights reserved.
-            </p>
-
-
-            <nav
-                aria-label="Footer navigation"
-            >
-
+            <p>&copy; 2026 Priyabrata Patra. All rights reserved.</p>
+            <nav aria-label="Footer navigation">
                 <ul>
-
-                    <li>
-                        <a href="about.html">
-                            About
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="projects.html">
-                            Projects
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html">
-                            Contact
-                        </a>
-                    </li>
-
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-
             </nav>
-
         </div>
-
     </footer>
 
+    <!-- JavaScript: Theme toggle and mobile menu -->
+    <script>
+        (function () {
+            // ===== Theme Toggle =====
+            const themeToggle = document.getElementById('themeToggle');
+            const root = document.documentElement;
+            const icon = themeToggle.querySelector('.theme-icon');
+
+            // Check saved theme in localStorage
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                root.setAttribute('data-theme', savedTheme);
+                icon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+            }
+
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                root.setAttribute('data-theme', currentTheme);
+                localStorage.setItem('theme', currentTheme);
+                icon.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+            });
+
+            // ===== Mobile Menu =====
+            const menuBtn = document.querySelector('.menu-toggle');
+            const nav = document.getElementById('primary-nav');
+
+            menuBtn.addEventListener('click', () => {
+                const isOpen = nav.classList.toggle('open');
+                menuBtn.setAttribute('aria-expanded', isOpen);
+
+                // Animate hamburger to X
+                const spans = menuBtn.querySelectorAll('span');
+                if (isOpen) {
+                    spans[0].style.transform = 'rotate(45deg) translate(5px,5px)';
+                    spans[1].style.opacity = '0';
+                    spans[2].style.transform = 'rotate(-45deg) translate(5px,-5px)';
+                } else {
+                    spans[0].style.transform = 'none';
+                    spans[1].style.opacity = '1';
+                    spans[2].style.transform = 'none';
+                }
+            });
+
+            // Close menu when a link is clicked
+            nav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    nav.classList.remove('open');
+                    menuBtn.setAttribute('aria-expanded', 'false');
+                    const spans = menuBtn.querySelectorAll('span');
+                    spans[0].style.transform = 'none';
+                    spans[1].style.opacity = '1';
+                    spans[2].style.transform = 'none';
+                });
+            });
+        })();
+    </script>
 </body>
 
 </html>
- 

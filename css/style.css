@@ -214,7 +214,7 @@ img {
   color: white;
 }
 
-/* ========== BUTTONS (Flexbox) ========== */
+/* ========== BUTTONS ========== */
 .button-group {
   display: flex;
   flex-wrap: wrap;
@@ -342,7 +342,7 @@ img {
   text-decoration: underline;
 }
 
-/* ========== PAGE HEADER (for subpages) ========== */
+/* ========== PAGE HEADER (About page) ========== */
 .page-header {
   padding: 3rem 0;
   background: var(--bg-secondary);
@@ -359,7 +359,7 @@ img {
   color: var(--text-muted);
 }
 
-/* Two-column layout (used in About) */
+/* Two-column layout for About */
 .two-column {
   display: grid;
   grid-template-columns: 1fr;
@@ -367,18 +367,60 @@ img {
   align-items: center;
 }
 
+/* Profile photo - circular with a nice ring */
 .profile-photo-wrapper {
-  max-width: 300px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-photo {
   border-radius: 50%;
-  box-shadow: var(--shadow);
-  border: 4px solid var(--primary);
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border: 6px solid var(--bg);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
+  background: var(--bg-card);
 }
 
-/* ========== CONTACT LAYOUT ========== */
+/* Education card - slightly elevated */
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.card h3 {
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ========== INTEREST ICONS ========== */
+.card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.card-icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--primary);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ========== CONTACT / SKILLS ========== */
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr;
@@ -397,29 +439,11 @@ img {
   margin-top: 1rem;
 }
 
-.contact-information address p {
-  margin-bottom: 0.75rem;
-}
-
-.contact-information a {
-  color: var(--primary);
-  word-break: break-all;
-}
-
 .form-wrapper {
   background: var(--bg-card);
   padding: 1.5rem;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-}
-
-.form-wrapper h2 {
-  margin-bottom: 0.5rem;
-}
-
-.form-wrapper #form-description {
-  color: var(--text-muted);
-  margin-bottom: 1.5rem;
 }
 
 .form-group {
@@ -444,13 +468,6 @@ img {
   transition: border-color 0.2s;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--primary);
-}
-
-/* ========== SKILLS LIST ========== */
 .skill-list {
   list-style: none;
   padding-left: 0;
@@ -461,24 +478,10 @@ img {
   border-bottom: 1px dashed var(--border);
 }
 
-.skill-list li:last-child {
-  border-bottom: none;
-}
-
 .skill-list li::before {
   content: "▹";
   color: var(--primary);
   margin-right: 0.75rem;
-}
-
-/* ========== NARROW CONTENT ========== */
-.narrow-content {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.narrow-content h2 {
-  margin-bottom: 0.5rem;
 }
 
 /* ========== CTA ========== */
@@ -499,7 +502,7 @@ img {
   margin-bottom: 1.5rem;
 }
 
-/* ========== FOOTER (Flexbox) ========== */
+/* ========== FOOTER ========== */
 .site-footer {
   background: var(--bg);
   border-top: 1px solid var(--border);
@@ -556,10 +559,6 @@ img {
     grid-template-columns: 1fr 2fr;
   }
 
-  .cta-section {
-    text-align: left;
-  }
-
   .footer-inner {
     flex-direction: row;
     justify-content: space-between;
@@ -573,5 +572,10 @@ img {
 
   .hero {
     padding: 6rem 0;
+  }
+
+  .profile-photo {
+    width: 320px;
+    height: 320px;
   }
 }

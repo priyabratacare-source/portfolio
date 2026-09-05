@@ -26,9 +26,9 @@
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -48,11 +48,14 @@ img {
   display: block;
 }
 
-button, input, textarea {
+button,
+input,
+textarea {
   font: inherit;
 }
 
-button, a {
+button,
+a {
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -96,7 +99,9 @@ button, a {
   text-transform: uppercase;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.2;
 }
 

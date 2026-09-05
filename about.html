@@ -49,7 +49,7 @@
 
     <!-- ================= MAIN CONTENT ================= -->
     <main id="main-content">
-        <!-- PAGE HEADER -->
+        <!-- PAGE HEADER (Hero) -->
         <section class="page-header" aria-labelledby="page-title">
             <div class="container two-column">
                 <div>
@@ -63,7 +63,7 @@
             </div>
         </section>
 
-        <!-- ABOUT -->
+        <!-- ABOUT & EDUCATION -->
         <section class="section" aria-labelledby="about-title">
             <div class="container two-column">
                 <article>
@@ -91,14 +91,23 @@
                 </header>
                 <div class="content-grid">
                     <article class="card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20h20M4 20V8l8-5 8 5v12M12 4v16"/></svg>
+                        </div>
                         <h3>Civil Engineering</h3>
                         <p>Exploring construction, structural concepts, engineering fundamentals and practical applications of Civil Engineering.</p>
                     </article>
                     <article class="card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></svg>
+                        </div>
                         <h3>BIM &amp; Digital Engineering</h3>
                         <p>Interested in Building Information Modeling, digital workflows and modern tools that can improve engineering and construction processes.</p>
                     </article>
                     <article class="card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M14 5l-4 14"/></svg>
+                        </div>
                         <h3>Technology &amp; Web Development</h3>
                         <p>Building websites and practical web applications while learning how technology can be applied to real-world problems.</p>
                     </article>
@@ -161,7 +170,6 @@
     <!-- Theme & Menu Script -->
     <script>
         (function () {
-            // Theme toggle
             const themeToggle = document.getElementById('themeToggle');
             const root = document.documentElement;
             const icon = themeToggle.querySelector('.theme-icon');
@@ -177,7 +185,6 @@
                 icon.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
             });
 
-            // Mobile menu
             const menuBtn = document.querySelector('.menu-toggle');
             const nav = document.getElementById('primary-nav');
             menuBtn.addEventListener('click', () => {

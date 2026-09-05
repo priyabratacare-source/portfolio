@@ -20,7 +20,6 @@
 </head>
 
 <body>
-    <!-- Skip navigation -->
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <!-- ================= HEADER ================= -->
@@ -28,7 +27,6 @@
         <div class="container header-inner">
             <a class="logo" href="index.html" aria-label="Priyabrata Patra home">PP<span>.</span></a>
 
-            <!-- Actions: theme + hamburger -->
             <div class="header-actions">
                 <button class="theme-toggle" aria-label="Toggle dark mode" id="themeToggle">
                     <span class="theme-icon">🌙</span>
@@ -38,7 +36,6 @@
                 </button>
             </div>
 
-            <!-- Primary Navigation -->
             <nav class="main-navigation" id="primary-nav" aria-label="Primary navigation">
                 <ul>
                     <li><a href="index.html" aria-current="page">Home</a></li>
@@ -57,12 +54,8 @@
         <section class="hero" aria-labelledby="hero-title">
             <div class="container hero-content">
                 <p class="eyebrow">Web Development Portfolio</p>
-                <h1 id="hero-title">
-                    Hello, I'm <span>Priyabrata Patra</span>
-                </h1>
-                <p class="hero-description">
-                    I build accessible, responsive and user-focused web experiences using modern web technologies.
-                </p>
+                <h1 id="hero-title">Hello, I'm <span>Priyabrata Patra</span></h1>
+                <p class="hero-description">I build accessible, responsive and user-focused web experiences using modern web technologies.</p>
                 <div class="button-group">
                     <a class="button primary-button" href="projects.html">View My Projects</a>
                     <a class="button secondary-button" href="contact.html">Contact Me</a>
@@ -118,15 +111,13 @@
         </div>
     </footer>
 
-    <!-- JavaScript: Theme toggle and mobile menu -->
     <script>
         (function () {
-            // ===== Theme Toggle =====
+            // Theme toggle
             const themeToggle = document.getElementById('themeToggle');
             const root = document.documentElement;
             const icon = themeToggle.querySelector('.theme-icon');
 
-            // Check saved theme in localStorage
             const savedTheme = localStorage.getItem('theme');
             if (savedTheme) {
                 root.setAttribute('data-theme', savedTheme);
@@ -140,7 +131,7 @@
                 icon.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
             });
 
-            // ===== Mobile Menu =====
+            // Mobile menu
             const menuBtn = document.querySelector('.menu-toggle');
             const nav = document.getElementById('primary-nav');
 
@@ -148,7 +139,6 @@
                 const isOpen = nav.classList.toggle('open');
                 menuBtn.setAttribute('aria-expanded', isOpen);
 
-                // Animate hamburger to X
                 const spans = menuBtn.querySelectorAll('span');
                 if (isOpen) {
                     spans[0].style.transform = 'rotate(45deg) translate(5px,5px)';
@@ -161,7 +151,6 @@
                 }
             });
 
-            // Close menu when a link is clicked
             nav.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
                     nav.classList.remove('open');

@@ -1,35 +1,252 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects | Personal Portfolio</title>
-<meta name="description" content="Accessible, responsive personal portfolio website.">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#2563eb">
-<link rel="canonical" href="https://example.com/projects.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Projects | Personal Portfolio">
-<meta property="og:description" content="Accessible, responsive personal portfolio website.">
-<meta property="og:url" content="https://example.com/">
-<link rel="stylesheet" href="css/style.css">
-<script defer src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Projects | Priyabrata Patra - Portfolio</title>
+    <meta name="description"
+        content="Explore web development and engineering projects by Priyabrata Patra, including Global Weather & Earth Monitor, Digital Print Out Shop, CalcPro, and CodeBihin systems.">
+    <meta name="keywords" content="Priyabrata Patra, Projects, Portfolio, Web Development, Global Weather & Earth Monitor, Maity Bhandar, CalcPro, CodeBihin">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Priyabrata Patra">
+    <link rel="canonical" href="https://priyabratacare-source.github.io/portfolio/projects.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Projects | Priyabrata Patra">
+    <meta property="og:description"
+        content="Showcasing modern web platforms, tools, and digital solutions created by Priyabrata Patra.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://priyabratacare-source.github.io/portfolio/projects.html">
+    <meta name="theme-color" content="#2563eb">
+
+    <!-- Direct Stylesheet Link -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+<!-- Accessible Skip Link -->
 <a class="skip-link" href="#main-content">Skip to main content</a>
-<header class="site-header" role="banner"><div class="container nav">
-<a class="brand" href="index.html" aria-label="Personal Portfolio home">My Portfolio</a>
-<nav aria-label="Primary navigation">
-<button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-navigation" aria-expanded="false">Menu</button>
-<ul class="nav-list" id="primary-navigation" data-open="false"><li><a href="index.html" >Home</a></li><li><a href="about.html" >About</a></li><li><a href="projects.html" aria-current="page">Projects</a></li><li><a href="skills.html" >Skills</a></li><li><a href="contact.html" >Contact</a></li></ul>
-</nav>
-<button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">◐</button>
-</div></header>
-<main id="main-content" tabindex="-1"><section class="page-title"><div class="container"><p class="eyebrow">Portfolio</p><h1>Projects</h1><p class="lead">Showcase your best work with concise descriptions and accessible links.</p></div></section>
-<section class="section"><div class="container grid project-grid">
-<article class="card project-card"><h2>Project One</h2><p>A responsive web project demonstrating semantic structure and modern CSS.</p><ul class="badges"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><div class="actions"><a class="button primary" href="#" aria-label="View Project One">View project</a></div></article>
-<article class="card project-card"><h2>Project Two</h2><p>An interface concept focused on usability, accessibility and responsive design.</p><ul class="badges"><li>UI</li><li>Accessibility</li></ul><div class="actions"><a class="button primary" href="#" aria-label="View Project Two">View project</a></div></article>
-<article class="card project-card"><h2>Project Three</h2><p>A practical experiment combining frontend technologies into a useful tool.</p><ul class="badges"><li>Web</li><li>API</li></ul><div class="actions"><a class="button primary" href="#" aria-label="View Project Three">View project</a></div></article>
-</div></section></main>
-<footer class="site-footer"><div class="container footer-inner"><span>© 2026 My Portfolio</span><span>Built with semantic HTML5 & CSS3.</span></div></footer>
-</body></html>
+
+<!-- ================= HEADER & NAVIGATION ================= -->
+<header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+
+            <div class="nav-title">
+                <a href="index.html" aria-label="Priyabrata Patra home">
+                    Priyabrata Patra
+                </a>
+            </div>
+
+            <!-- 3-Line Mobile Button -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Toggle navigation menu"
+                aria-expanded="false"
+                aria-controls="main-menu">
+                &#9776;
+            </button>
+
+            <ul class="nav-menu" id="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" aria-current="page">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero" aria-labelledby="projects-title">
+        <div class="container hero-content">
+
+            <p class="eyebrow">Portfolio &amp; Work</p>
+
+            <h1 id="projects-title">
+                My Projects
+            </h1>
+
+            <p class="hero-text">
+                A collection of web platforms, utility applications, and custom digital systems built with modern technology and accessible designs.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS GRID SECTION -->
+    <section class="features section" aria-labelledby="featured-projects-title">
+        <div class="container">
+
+            <p class="section-label">Showcase</p>
+
+            <h2 id="featured-projects-title">Featured Work</h2>
+
+            <div class="feature-grid">
+
+                <!-- Project 1 -->
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#127757;</span>
+                    <h3>Global Weather &amp; Earth Monitor</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Created by Priyabrata Patra</p>
+                    <p>
+                        A modern web platform that provides real-time weather updates, forecasts, global maps, environmental conditions, and Earth monitoring data in one place.
+                    </p>
+                    <div style="margin-top: 1.25rem;">
+                        <a href="#" target="_blank" rel="noopener noreferrer" style="color: #2563eb; font-weight: 600; text-decoration: none;">
+                            &#128279; Visit Website
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#128424;</span>
+                    <h3>Digital Print Out Shop (Maity Bhandar)</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Created by Priyabrata Patra</p>
+                    <p>
+                        High quality digital printing service app and platform designed for Maity Bhandar, available in Tarakeswar.
+                    </p>
+                    <div style="margin-top: 1.25rem;">
+                        <a href="#" target="_blank" rel="noopener noreferrer" style="color: #2563eb; font-weight: 600; text-decoration: none;">
+                            &#128279; Visit Website
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#128038;</span>
+                    <h3>CalcPro &middot; Smart Scientific Suite</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Created by Priyabrata Patra</p>
+                    <p>
+                        Advanced scientific calculator tool designed for quick, precise computations and multi-purpose mathematical calculations.
+                    </p>
+                    <div style="margin-top: 1.25rem; font-size: 0.85rem; color: var(--text-muted); font-style: italic;">
+                        Soon Updated
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#127760;</span>
+                    <h3>CodeBihin.in</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Created by Priyabrata Patra</p>
+                    <p>
+                        Core Web platform focused on providing accessible digital services and seamless online tools.
+                    </p>
+                    <div style="margin-top: 1.25rem;">
+                        <a href="#" target="_blank" rel="noopener noreferrer" style="color: #2563eb; font-weight: 600; text-decoration: none;">
+                            &#128279; Visit Website
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#128737;</span>
+                    <h3>CodeBihin Firewall</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Created by Priyabrata Patra</p>
+                    <p>
+                        Security solution and web firewall system developed to guard online portals against unauthorized access and security risks.
+                    </p>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#128221;</span>
+                    <h3>Examination System CodeBihin</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Created by Priyabrata Patra</p>
+                    <p>
+                        Custom online examination and assessment management system designed for smooth testing, evaluation, and record keeping.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta-section" aria-labelledby="cta-title">
+        <div class="container">
+
+            <h2 id="cta-title">Have a project in mind?</h2>
+
+            <p>
+                Let's build something useful, practical and accessible together.
+            </p>
+
+            <a class="button primary-button" href="contact.html">
+                Get in Touch
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- ================= SEO-FRIENDLY & SMOOTH FOOTER ================= -->
+<footer class="site-footer">
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+                <h3>Priyabrata Patra</h3>
+                <p>Civil Engineering Student &amp; Web Developer committed to creating efficient, accessible, and high-performance digital and structural solutions.</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills &amp; Tools</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/priyabratacare-source" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="contact.html">Send Message</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Priyabrata Patra. All rights reserved.</p>
+        </div>
+
+    </div>
+</footer>
+
+<!-- JavaScript for Smooth Mobile Menu Toggle -->
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mainMenu = document.getElementById('main-menu');
+
+    menuToggle.addEventListener('click', () => {
+        const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', !isOpen);
+        mainMenu.classList.toggle('is-active');
+    });
+</script>
+
+</body>
+</html>

@@ -1,31 +1,247 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Skills | Personal Portfolio</title>
-<meta name="description" content="Accessible, responsive personal portfolio website.">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#2563eb">
-<link rel="canonical" href="https://example.com/skills.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Skills | Personal Portfolio">
-<meta property="og:description" content="Accessible, responsive personal portfolio website.">
-<meta property="og:url" content="https://example.com/">
-<link rel="stylesheet" href="css/style.css">
-<script defer src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Skills &amp; Technologies | Priyabrata Patra</title>
+    <meta name="description"
+        content="Explore the technical skills, web development tools, mobile app development capabilities, and engineering expertise of Priyabrata Patra.">
+    <meta name="keywords" content="Priyabrata Patra, Skills, Frontend Development, HTML5, CSS Grid, JavaScript, Kotlin, React, Firebase, Backend, Web Developer">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Priyabrata Patra">
+    <link rel="canonical" href="https://priyabratacare-source.github.io/portfolio/skills.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Skills &amp; Technologies | Priyabrata Patra">
+    <meta property="og:description"
+        content="Technical skill set spanning Frontend Web, Mobile App Development, Databases, Backend Systems, and Civil Engineering Tools.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://priyabratacare-source.github.io/portfolio/skills.html">
+    <meta name="theme-color" content="#2563eb">
+
+    <!-- Direct Stylesheet Link -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+<!-- Accessible Skip Link -->
 <a class="skip-link" href="#main-content">Skip to main content</a>
-<header class="site-header" role="banner"><div class="container nav">
-<a class="brand" href="index.html" aria-label="Personal Portfolio home">My Portfolio</a>
-<nav aria-label="Primary navigation">
-<button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-navigation" aria-expanded="false">Menu</button>
-<ul class="nav-list" id="primary-navigation" data-open="false"><li><a href="index.html" >Home</a></li><li><a href="about.html" >About</a></li><li><a href="projects.html" >Projects</a></li><li><a href="skills.html" aria-current="page">Skills</a></li><li><a href="contact.html" >Contact</a></li></ul>
-</nav>
-<button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">◐</button>
-</div></header>
-<main id="main-content" tabindex="-1"><section class="page-title"><div class="container"><p class="eyebrow">Capabilities</p><h1>Skills</h1><p class="lead">Organize your technical skills into clear, scannable categories.</p></div></section>
-<section class="section"><div class="container grid cards"><article class="card"><h2>Frontend</h2><ul class="badges"><li>HTML5</li><li>CSS Grid</li><li>Flexbox</li><li>JavaScript</li><li>Responsive UI</li></ul></article><article class="card"><h2>Tools</h2><ul class="badges"><li>Git</li><li>GitHub</li><li>VS Code</li><li>Browser DevTools</li></ul></article><article class="card"><h2>Principles</h2><ul class="badges"><li>Accessibility</li><li>SEO</li><li>Performance</li><li>Progressive Enhancement</li></ul></article></div></section></main>
-<footer class="site-footer"><div class="container footer-inner"><span>© 2026 My Portfolio</span><span>Built with semantic HTML5 & CSS3.</span></div></footer>
-</body></html>
+
+<!-- ================= HEADER & NAVIGATION ================= -->
+<header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+
+            <div class="nav-title">
+                <a href="index.html" aria-label="Priyabrata Patra home">
+                    Priyabrata Patra
+                </a>
+            </div>
+
+            <!-- 3-Line Mobile Button -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Toggle navigation menu"
+                aria-expanded="false"
+                aria-controls="main-menu">
+                &#9776;
+            </button>
+
+            <ul class="nav-menu" id="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html" aria-current="page">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero" aria-labelledby="skills-title">
+        <div class="container hero-content">
+
+            <p class="eyebrow">Expertise &amp; Capabilities</p>
+
+            <h1 id="skills-title">
+                Skills &amp; Technologies
+            </h1>
+
+            <p class="hero-text">
+                A comprehensive technical breakdown of web, mobile, database, backend technologies, and engineering design tools I work with.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="features section" aria-labelledby="technical-skills-heading">
+        <div class="container">
+
+            <p class="section-label">Technical Stack</p>
+
+            <h2 id="technical-skills-heading">Software &amp; Web Development</h2>
+
+            <div class="feature-grid">
+
+                <!-- Frontend Card -->
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#128187;</span>
+                    <h3>Frontend Development</h3>
+                    <ul style="margin-top: 0.75rem; line-height: 1.8; list-style-type: square; padding-left: 1.25rem;">
+                        <li>HTML5 &amp; Semantic Web</li>
+                        <li>CSS Grid &amp; Flexbox</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React &amp; React.js</li>
+                        <li>Responsive UI / UX Design</li>
+                    </ul>
+                </article>
+
+                <!-- Mobile & Application Development Card -->
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#128241;</span>
+                    <h3>Mobile App Development</h3>
+                    <ul style="margin-top: 0.75rem; line-height: 1.8; list-style-type: square; padding-left: 1.25rem;">
+                        <li>Android App Building</li>
+                        <li>Kotlin</li>
+                        <li>Cross-Platform App Concepts</li>
+                        <li>Mobile UI Optimization</li>
+                    </ul>
+                </article>
+
+                <!-- Backend & Databases Card -->
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#9881;</span>
+                    <h3>Backend &amp; Databases</h3>
+                    <ul style="margin-top: 0.75rem; line-height: 1.8; list-style-type: square; padding-left: 1.25rem;">
+                        <li>Backend API Integration</li>
+                        <li>Server Management</li>
+                        <li>Firebase Realtime Database &amp; Auth</li>
+                        <li>Database Operations</li>
+                    </ul>
+                </article>
+
+                <!-- Tools & Environment Card -->
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#128736;</span>
+                    <h3>Developer Tools</h3>
+                    <ul style="margin-top: 0.75rem; line-height: 1.8; list-style-type: square; padding-left: 1.25rem;">
+                        <li>Git &amp; GitHub Version Control</li>
+                        <li>VS Code</li>
+                        <li>Browser DevTools</li>
+                        <li>Terminal / CLI Basics</li>
+                    </ul>
+                </article>
+
+                <!-- Core Principles Card -->
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#10024;</span>
+                    <h3>Web Principles</h3>
+                    <ul style="margin-top: 0.75rem; line-height: 1.8; list-style-type: square; padding-left: 1.25rem;">
+                        <li>Web Accessibility (a11y)</li>
+                        <li>Search Engine Optimization (SEO)</li>
+                        <li>Page Speed &amp; Performance</li>
+                        <li>Progressive Enhancement</li>
+                    </ul>
+                </article>
+
+                <!-- Civil Engineering & Technical Software Card -->
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#127959;</span>
+                    <h3>Civil &amp; Engineering Tools</h3>
+                    <ul style="margin-top: 0.75rem; line-height: 1.8; list-style-type: square; padding-left: 1.25rem;">
+                        <li>AutoCAD 2D / 3D</li>
+                        <li>Revit &amp; BIM Workflows</li>
+                        <li>GIS &amp; Remote Sensing (ISRO IIRS)</li>
+                        <li>Structural Concepts</li>
+                    </ul>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta-section" aria-labelledby="cta-title">
+        <div class="container">
+
+            <h2 id="cta-title">Have a project in mind?</h2>
+
+            <p>
+                Let's build something useful, practical and accessible together.
+            </p>
+
+            <a class="button primary-button" href="contact.html">
+                Get in Touch
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- ================= SEO-FRIENDLY & SMOOTH FOOTER ================= -->
+<footer class="site-footer">
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+                <h3>Priyabrata Patra</h3>
+                <p>Civil Engineering Student &amp; Web Developer committed to creating efficient, accessible, and high-performance digital and structural solutions.</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills &amp; Tools</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/priyabratacare-source" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="contact.html">Send Message</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Priyabrata Patra. All rights reserved.</p>
+        </div>
+
+    </div>
+</footer>
+
+<!-- JavaScript for Smooth Mobile Menu Toggle -->
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mainMenu = document.getElementById('main-menu');
+
+    menuToggle.addEventListener('click', () => {
+        const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', !isOpen);
+        mainMenu.classList.toggle('is-active');
+    });
+</script>
+
+</body>
+</html>

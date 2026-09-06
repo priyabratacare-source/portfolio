@@ -1,31 +1,224 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About | Personal Portfolio</title>
-<meta name="description" content="Accessible, responsive personal portfolio website.">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#2563eb">
-<link rel="canonical" href="https://example.com/about.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="About | Personal Portfolio">
-<meta property="og:description" content="Accessible, responsive personal portfolio website.">
-<meta property="og:url" content="https://example.com/">
-<link rel="stylesheet" href="css/style.css">
-<script defer src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>About | Priyabrata Patra - Portfolio</title>
+    <meta name="description"
+        content="Learn about Priyabrata Patra, a Civil Engineering student at Hooghly Engineering and Technology College (HETC) passionate about AutoCAD, Revit, BIM, and Web Solutions.">
+    <meta name="keywords" content="Priyabrata Patra, About, Civil Engineering, HETC, AutoCAD, Revit, BIM, Ramnagar N.B.P.C. High School, Education">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Priyabrata Patra">
+    <link rel="canonical" href="https://priyabratacare-source.github.io/portfolio/about.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="About Priyabrata Patra | Portfolio">
+    <meta property="og:description"
+        content="B.Tech Civil Engineering Student @ HETC | Learning AutoCAD, Revit & BIM | Web Development Intern @ Thiranex.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://priyabratacare-source.github.io/portfolio/about.html">
+    <meta name="theme-color" content="#2563eb">
+
+    <!-- Direct Stylesheet Link -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+<!-- Accessible Skip Link -->
 <a class="skip-link" href="#main-content">Skip to main content</a>
-<header class="site-header" role="banner"><div class="container nav">
-<a class="brand" href="index.html" aria-label="Personal Portfolio home">My Portfolio</a>
-<nav aria-label="Primary navigation">
-<button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-navigation" aria-expanded="false">Menu</button>
-<ul class="nav-list" id="primary-navigation" data-open="false"><li><a href="index.html" >Home</a></li><li><a href="about.html" aria-current="page">About</a></li><li><a href="projects.html" >Projects</a></li><li><a href="skills.html" >Skills</a></li><li><a href="contact.html" >Contact</a></li></ul>
-</nav>
-<button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">◐</button>
-</div></header>
-<main id="main-content" tabindex="-1"><section class="page-title"><div class="container"><p class="eyebrow">About</p><h1>About me</h1><p class="lead">Replace this text with your personal introduction, education, experience and goals.</p></div></section>
-<section class="section"><div class="container grid two-col"><article class="card"><h2>My journey</h2><p>I enjoy turning ideas into practical digital experiences. Add your story here: what you study, what you build, and what you want to learn next.</p><p>I value clean structure, usability and continuous learning.</p></article><aside class="card"><h2>Skills</h2><ul class="badges"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive Design</li><li>Git</li><li>Accessibility</li></ul></aside></div></section></main>
-<footer class="site-footer"><div class="container footer-inner"><span>© 2026 My Portfolio</span><span>Built with semantic HTML5 & CSS3.</span></div></footer>
-</body></html>
+
+<!-- ================= HEADER & NAVIGATION ================= -->
+<header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+
+            <div class="nav-title">
+                <a href="index.html" aria-label="Priyabrata Patra home">
+                    Priyabrata Patra
+                </a>
+            </div>
+
+            <!-- 3-Line Mobile Button -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Toggle navigation menu"
+                aria-expanded="false"
+                aria-controls="main-menu">
+                &#9776;
+            </button>
+
+            <ul class="nav-menu" id="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero" aria-labelledby="about-title">
+        <div class="container hero-content">
+
+            <p class="eyebrow">Get to Know Me</p>
+
+            <h1 id="about-title">
+                About Me
+            </h1>
+
+            <p class="hero-text">
+                B.Tech in Civil Engineering (Pursuing) | Technology Enthusiast | Learning AutoCAD, Revit &amp; BIM | Exploring Civil Engineering &amp; Tech-Based Solutions | Student at Hooghly Engineering &amp; Technology College
+            </p>
+
+        </div>
+    </section>
+
+    <!-- BIO SECTION -->
+    <section class="features section" aria-labelledby="bio-title">
+        <div class="container">
+
+            <p class="section-label">Background</p>
+
+            <h2 id="bio-title">Passionate About Engineering &amp; Innovation</h2>
+
+            <div class="feature-card">
+                <p>
+                    I am a first-year Civil Engineering student at Hooghly Engineering and Technology College (HETC), currently focused on building a strong foundation in core engineering concepts. I am passionate about learning, improving my technical skills, and applying theoretical knowledge to real-world problems.
+                </p>
+                <p style="margin-top: 1rem;">
+                    I have a growing interest in areas such as construction, structural design, and modern tools like AutoCAD and BIM. Alongside academics, I am eager to explore practical projects, internships, and hands-on experiences that will help me develop industry-relevant skills.
+                </p>
+                <p style="margin-top: 1rem;">
+                    I believe in continuous learning, collaboration, and innovation. I am actively looking to connect with like-minded students, professionals, and mentors to share knowledge, gain insights, and grow together in the field of engineering.
+                </p>
+                <p style="margin-top: 1.25rem; font-weight: 700; color: var(--primary-color);">
+                    Let’s connect and build something meaningful!
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="features section" aria-labelledby="education-title" style="background-color: var(--bg-alt);">
+        <div class="container">
+
+            <p class="section-label">Academic Journey</p>
+
+            <h2 id="education-title">Education Background</h2>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#127891;</span>
+                    <h3>Hooghly Engineering and Technology College</h3>
+                    <p style="font-weight: 700; color: var(--primary-color); margin-bottom: 0.25rem;">B.Tech, Civil Engineering</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">Aug 2026 &ndash; Jul 2030</p>
+                    <p>Building strong core foundations in structural engineering, mechanics, technical drafting, BIM, and technical problem-solving.</p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#127979;</span>
+                    <h3>Ramnagar N.B.P.C. High School</h3>
+                    <p style="font-weight: 700; color: var(--primary-color); margin-bottom: 0.25rem;">Higher Secondary Education (Science)</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">Jun 2024 &ndash; May 2026</p>
+                    <p>Completed higher secondary education in Science, developing key analytical and mathematical skills.</p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#127979;</span>
+                    <h3>Ramnagar N.B.P.C. High School</h3>
+                    <p style="font-weight: 700; color: var(--primary-color); margin-bottom: 0.25rem;">Madhyamik (Secondary Education)</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">Jan 2018 &ndash; May 2024</p>
+                    <p>Completed general secondary education with focus on science and mathematics fundamentals.</p>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta-section" aria-labelledby="cta-title">
+        <div class="container">
+
+            <h2 id="cta-title">Have a project in mind?</h2>
+
+            <p>
+                Let's build something useful, practical and accessible together.
+            </p>
+
+            <a class="button primary-button" href="contact.html">
+                Get in Touch
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- ================= SEO-FRIENDLY & SMOOTH FOOTER ================= -->
+<footer class="site-footer">
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+                <h3>Priyabrata Patra</h3>
+                <p>Civil Engineering Student &amp; Web Developer committed to creating efficient, accessible, and high-performance digital and structural solutions.</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills &amp; Tools</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/priyabratacare-source" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="contact.html">Send Message</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Priyabrata Patra. All rights reserved.</p>
+        </div>
+
+    </div>
+</footer>
+
+<!-- JavaScript for Smooth Mobile Menu Toggle -->
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mainMenu = document.getElementById('main-menu');
+
+    menuToggle.addEventListener('click', () => {
+        const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', !isOpen);
+        mainMenu.classList.toggle('is-active');
+    });
+</script>
+
+</body>
+</html>

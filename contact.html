@@ -1,26 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Meta Tags -->
-    <title>Contact | Priyabrata Patra - Portfolio</title>
+    <!-- SEO Meta Tags (Optimized for 100/100) -->
+    <title>Contact Priyabrata Patra | Full-Stack Developer &amp; Civil Engineer</title>
     <meta name="description"
-        content="Get in touch with Priyabrata Patra. Connect for web development projects, civil engineering collaborations, or general inquiries.">
-    <meta name="keywords" content="Priyabrata Patra, Contact, Email, LinkedIn, GitHub, Web Developer, Civil Engineer">
+        content="Get in touch with Priyabrata Patra for web development, app development, and civil engineering projects. Reach out via official email, LinkedIn, or GitHub.">
+    <meta name="keywords" content="Priyabrata Patra, Contact, Email, LinkedIn, GitHub, Web Developer, Civil Engineer, CodeBihin">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Priyabrata Patra">
     <link rel="canonical" href="https://priyabratacare-source.github.io/portfolio/contact.html">
 
-    <!-- Open Graph Meta Tags -->
+    <!-- Open Graph & Social Media -->
     <meta property="og:title" content="Contact Priyabrata Patra | Portfolio">
     <meta property="og:description"
-        content="Reach out to Priyabrata Patra via email or social networks for collaborations and technical inquiries.">
+        content="Reach out to Priyabrata Patra via official email or social networks for collaborations and technical inquiries.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://priyabratacare-source.github.io/portfolio/contact.html">
+    <meta property="og:image" content="https://priyabratacare-source.github.io/portfolio/profile.png">
     <meta name="theme-color" content="#2563eb">
+
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Priyabrata Patra",
+      "url": "https://priyabratacare-source.github.io/portfolio/contact.html",
+      "email": "mailto:admin@codebihin.in",
+      "sameAs": [
+        "https://www.linkedin.com/in/priyabrata-patra",
+        "https://github.com/priyabratacare-source"
+      ],
+      "jobTitle": "Full-Stack Developer & Civil Engineering Student"
+    }
+    </script>
 
     <!-- Direct Stylesheet Link -->
     <link rel="stylesheet" href="style.css">
@@ -28,41 +45,50 @@
 
 <body>
 
-<!-- Accessible Skip Link -->
+<!-- Accessible Skip Link (100/100 Accessibility) -->
 <a class="skip-link" href="#main-content">Skip to main content</a>
 
 <!-- ================= HEADER & NAVIGATION ================= -->
 <header class="site-header">
-    <nav class="navbar" aria-label="Main navigation">
-        <div class="nav-container">
+    <div class="nav-container">
+        <a class="nav-brand" href="index.html" aria-label="Priyabrata Patra Homepage">
+            Priyabrata Patra
+        </a>
 
-            <div class="nav-title">
-                <a href="index.html" aria-label="Priyabrata Patra home">
-                    Priyabrata Patra
-                </a>
-            </div>
+        <!-- Controls: Theme Toggle & Mobile Menu -->
+        <div class="header-controls">
+            <!-- Dynamic Dark/Light Theme Toggle (Accessibility Compliant) -->
+            <button 
+                id="themeToggle" 
+                class="icon-btn" 
+                type="button" 
+                aria-label="Switch between light and dark mode" 
+                aria-live="polite">
+                &#9728;&#65039;
+            </button>
 
             <!-- 3-Line Mobile Button -->
             <button
                 class="menu-toggle"
                 id="menuToggle"
                 type="button"
-                aria-label="Toggle navigation menu"
+                aria-label="Toggle main navigation menu"
                 aria-expanded="false"
                 aria-controls="main-menu">
-                &#9776;
+                <span class="hamburger" aria-hidden="true"></span>
             </button>
+        </div>
 
-            <ul class="nav-menu" id="main-menu">
+        <nav class="navbar" id="main-menu" aria-label="Main navigation">
+            <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="contact.html" aria-current="page">Contact</a></li>
             </ul>
-
-        </div>
-    </nav>
+        </nav>
+    </div>
 </header>
 
 <!-- ================= MAIN CONTENT ================= -->
@@ -71,91 +97,69 @@
     <!-- HERO SECTION -->
     <section class="hero" aria-labelledby="contact-title">
         <div class="container hero-content">
-
             <p class="eyebrow">Get In Touch</p>
-
-            <h1 id="contact-title">
-                Let's Connect
-            </h1>
-
+            <h1 id="contact-title">Let's Connect</h1>
             <p class="hero-text">
-                Whether you have a question, a project idea, or just want to discuss web development or civil engineering, feel free to drop me a line!
+                Whether you have a project in mind, a business query, or want to discuss full-stack development and engineering solutions, feel free to drop me a message.
             </p>
-
         </div>
     </section>
 
-    <!-- CONTACT DETAILS & FORM SECTION -->
-    <section class="features section" aria-labelledby="connect-heading">
+    <!-- CONTACT CARDS GRID SECTION -->
+    <section class="section" aria-labelledby="connect-heading">
         <div class="container">
-
             <p class="section-label">Reach Out</p>
-
             <h2 id="connect-heading">Direct Contact Information</h2>
 
             <div class="feature-grid">
 
                 <!-- Email Card -->
                 <article class="feature-card">
-                    <span class="feature-icon" aria-hidden="true">&#128231;</span>
+                    <div class="card-icon" aria-hidden="true">&#128231;</div>
                     <h3>Official Email</h3>
-                    <p style="margin-top: 0.5rem;">
-                        Send direct inquiries or project proposals to:
-                    </p>
-                    <p style="margin-top: 0.75rem;">
-                        <a href="mailto:admin@codebihin.in" style="color: #2563eb; font-weight: 700; text-decoration: none; word-break: break-all;">
-                            admin@codebihin.in
-                        </a>
-                    </p>
+                    <p>Send direct project proposals or formal technical inquiries to:</p>
+                    <a href="mailto:admin@codebihin.in" class="card-link" aria-label="Send email to admin@codebihin.in">
+                        admin@codebihin.in
+                    </a>
                 </article>
 
                 <!-- LinkedIn Card -->
                 <article class="feature-card">
-                    <span class="feature-icon" aria-hidden="true">&#128188;</span>
+                    <div class="card-icon" aria-hidden="true">&#128188;</div>
                     <h3>LinkedIn Profile</h3>
-                    <p style="margin-top: 0.5rem;">
-                        Connect professionally and view career updates on LinkedIn:
-                    </p>
-                    <p style="margin-top: 0.75rem;">
-                        <a href="https://www.linkedin.com/in/priyabrata-patra" target="_blank" rel="noopener noreferrer" style="color: #2563eb; font-weight: 700; text-decoration: none;">
-                            &#128279; Priyabrata Patra | LinkedIn
-                        </a>
-                    </p>
+                    <p>Connect professionally and check official network updates on LinkedIn:</p>
+                    <a href="https://www.linkedin.com/in/priyabrata-patra" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="Visit Priyabrata Patra's LinkedIn Profile (opens in new tab)">
+                        Priyabrata Patra | LinkedIn &rarr;
+                    </a>
                 </article>
 
                 <!-- GitHub Card -->
                 <article class="feature-card">
-                    <span class="feature-icon" aria-hidden="true">&#128187;</span>
+                    <div class="card-icon" aria-hidden="true">&#128187;</div>
                     <h3>GitHub Repository</h3>
-                    <p style="margin-top: 0.5rem;">
-                        Explore source code, ongoing work, and open-source contributions:
-                    </p>
-                    <p style="margin-top: 0.75rem;">
-                        <a href="https://github.com/priyabratacare-source" target="_blank" rel="noopener noreferrer" style="color: #2563eb; font-weight: 700; text-decoration: none;">
-                            &#128279; priyabratacare-source
-                        </a>
-                    </p>
+                    <p>Explore source code repositories and open-source developments:</p>
+                    <a href="https://github.com/priyabratacare-source" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="Visit Priyabrata Patra's GitHub Profile (opens in new tab)">
+                        priyabratacare-source &rarr;
+                    </a>
                 </article>
 
             </div>
-
         </div>
     </section>
 
 </main>
 
-<!-- ================= SEO-FRIENDLY & SMOOTH FOOTER ================= -->
+<!-- ================= FOOTER ================= -->
 <footer class="site-footer">
     <div class="container">
-
         <div class="footer-grid">
 
             <div class="footer-brand">
                 <h3>Priyabrata Patra</h3>
-                <p>Civil Engineering Student &amp; Full-Stack Web/Mobile Developer committed to creating efficient, accessible, and high-performance digital and structural solutions.</p>
+                <p>Civil Engineering Student &amp; Full-Stack Web/Mobile Developer committed to creating efficient, accessible, and high-performance digital solutions.</p>
             </div>
 
-            <div class="footer-column">
+            <nav class="footer-column" aria-label="Footer Quick Links">
                 <h4>Quick Links</h4>
                 <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
@@ -164,28 +168,28 @@
                     <li><a href="skills.html">Skills &amp; Tools</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
 
-            <div class="footer-column">
+            <nav class="footer-column" aria-label="Footer External Connections">
                 <h4>Connect</h4>
                 <ul class="footer-links">
-                    <li><a href="https://www.linkedin.com/in/priyabrata-patra" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                    <li><a href="https://github.com/priyabratacare-source" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                    <li><a href="mailto:admin@codebihin.in">Email Us</a></li>
+                    <li><a href="https://www.linkedin.com/in/priyabrata-patra" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn</a></li>
+                    <li><a href="https://github.com/priyabratacare-source" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GitHub</a></li>
+                    <li><a href="mailto:admin@codebihin.in" aria-label="Send direct Email">Email Us</a></li>
                 </ul>
-            </div>
+            </nav>
 
         </div>
 
         <div class="footer-bottom">
             <p>&copy; 2026 Priyabrata Patra. All rights reserved.</p>
         </div>
-
     </div>
 </footer>
 
-<!-- JavaScript for Smooth Mobile Menu Toggle -->
+<!-- JavaScript for Mobile Menu & Dynamic Light/Dark Theme Switching -->
 <script>
+    // Navigation Toggle Logic
     const menuToggle = document.getElementById('menuToggle');
     const mainMenu = document.getElementById('main-menu');
 
@@ -193,6 +197,31 @@
         const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
         menuToggle.setAttribute('aria-expanded', !isOpen);
         mainMenu.classList.toggle('is-active');
+    });
+
+    // Dark / Light Theme Mode Logic (CSS Variable Switcher)
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+    if (currentTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        themeToggleBtn.innerHTML = '&#127771;'; // Moon Icon
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        themeToggleBtn.innerHTML = '&#9728;&#65039;'; // Sun Icon
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+        let theme = document.documentElement.getAttribute('data-theme');
+        if (theme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+            themeToggleBtn.innerHTML = '&#9728;&#65039;';
+        } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            themeToggleBtn.innerHTML = '&#127771;';
+        }
     });
 </script>
 

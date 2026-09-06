@@ -1,38 +1,200 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact | Personal Portfolio</title>
-<meta name="description" content="Accessible, responsive personal portfolio website.">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#2563eb">
-<link rel="canonical" href="https://example.com/contact.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Contact | Personal Portfolio">
-<meta property="og:description" content="Accessible, responsive personal portfolio website.">
-<meta property="og:url" content="https://example.com/">
-<link rel="stylesheet" href="css/style.css">
-<script defer src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Contact | Priyabrata Patra - Portfolio</title>
+    <meta name="description"
+        content="Get in touch with Priyabrata Patra. Connect for web development projects, civil engineering collaborations, or general inquiries.">
+    <meta name="keywords" content="Priyabrata Patra, Contact, Email, LinkedIn, GitHub, Web Developer, Civil Engineer">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Priyabrata Patra">
+    <link rel="canonical" href="https://priyabratacare-source.github.io/portfolio/contact.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contact Priyabrata Patra | Portfolio">
+    <meta property="og:description"
+        content="Reach out to Priyabrata Patra via email or social networks for collaborations and technical inquiries.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://priyabratacare-source.github.io/portfolio/contact.html">
+    <meta name="theme-color" content="#2563eb">
+
+    <!-- Direct Stylesheet Link -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+<!-- Accessible Skip Link -->
 <a class="skip-link" href="#main-content">Skip to main content</a>
-<header class="site-header" role="banner"><div class="container nav">
-<a class="brand" href="index.html" aria-label="Personal Portfolio home">My Portfolio</a>
-<nav aria-label="Primary navigation">
-<button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-navigation" aria-expanded="false">Menu</button>
-<ul class="nav-list" id="primary-navigation" data-open="false"><li><a href="index.html" >Home</a></li><li><a href="about.html" >About</a></li><li><a href="projects.html" >Projects</a></li><li><a href="skills.html" >Skills</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul>
-</nav>
-<button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">◐</button>
-</div></header>
-<main id="main-content" tabindex="-1"><section class="page-title"><div class="container"><p class="eyebrow">Get in touch</p><h1>Contact me</h1><p class="lead">Use the form below. It is keyboard accessible and includes explicit labels and validation.</p></div></section>
-<section class="section"><div class="container contact-grid"><aside class="card"><h2>Let's talk</h2><p class="muted">Replace this section with your email, social profiles or availability.</p><p><strong>Email:</strong> <a href="mailto:hello@example.com">hello@example.com</a></p></aside>
-<section class="card" aria-labelledby="contact-heading"><h2 id="contact-heading">Send a message</h2>
-<form id="contact-form" novalidate><div><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required aria-required="true"></div>
-<div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required aria-required="true"></div>
-<div><label for="subject">Subject</label><input id="subject" name="subject" type="text" required aria-required="true"></div>
-<div><label for="message">Message</label><textarea id="message" name="message" required aria-required="true"></textarea></div>
-<p id="form-status" class="form-status" role="status" aria-live="polite"></p>
-<button class="button primary" type="submit">Send message</button></form></section></div></section></main>
-<footer class="site-footer"><div class="container footer-inner"><span>© 2026 My Portfolio</span><span>Built with semantic HTML5 & CSS3.</span></div></footer>
-</body></html>
+
+<!-- ================= HEADER & NAVIGATION ================= -->
+<header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+
+            <div class="nav-title">
+                <a href="index.html" aria-label="Priyabrata Patra home">
+                    Priyabrata Patra
+                </a>
+            </div>
+
+            <!-- 3-Line Mobile Button -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Toggle navigation menu"
+                aria-expanded="false"
+                aria-controls="main-menu">
+                &#9776;
+            </button>
+
+            <ul class="nav-menu" id="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero" aria-labelledby="contact-title">
+        <div class="container hero-content">
+
+            <p class="eyebrow">Get In Touch</p>
+
+            <h1 id="contact-title">
+                Let's Connect
+            </h1>
+
+            <p class="hero-text">
+                Whether you have a question, a project idea, or just want to discuss web development or civil engineering, feel free to drop me a line!
+            </p>
+
+        </div>
+    </section>
+
+    <!-- CONTACT DETAILS & FORM SECTION -->
+    <section class="features section" aria-labelledby="connect-heading">
+        <div class="container">
+
+            <p class="section-label">Reach Out</p>
+
+            <h2 id="connect-heading">Direct Contact Information</h2>
+
+            <div class="feature-grid">
+
+                <!-- Email Card -->
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#128231;</span>
+                    <h3>Official Email</h3>
+                    <p style="margin-top: 0.5rem;">
+                        Send direct inquiries or project proposals to:
+                    </p>
+                    <p style="margin-top: 0.75rem;">
+                        <a href="mailto:admin@codebihin.in" style="color: #2563eb; font-weight: 700; text-decoration: none; word-break: break-all;">
+                            admin@codebihin.in
+                        </a>
+                    </p>
+                </article>
+
+                <!-- LinkedIn Card -->
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#128188;</span>
+                    <h3>LinkedIn Profile</h3>
+                    <p style="margin-top: 0.5rem;">
+                        Connect professionally and view career updates on LinkedIn:
+                    </p>
+                    <p style="margin-top: 0.75rem;">
+                        <a href="https://www.linkedin.com/in/priyabrata-patra" target="_blank" rel="noopener noreferrer" style="color: #2563eb; font-weight: 700; text-decoration: none;">
+                            &#128279; Priyabrata Patra | LinkedIn
+                        </a>
+                    </p>
+                </article>
+
+                <!-- GitHub Card -->
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#128187;</span>
+                    <h3>GitHub Repository</h3>
+                    <p style="margin-top: 0.5rem;">
+                        Explore source code, ongoing work, and open-source contributions:
+                    </p>
+                    <p style="margin-top: 0.75rem;">
+                        <a href="https://github.com/priyabratacare-source" target="_blank" rel="noopener noreferrer" style="color: #2563eb; font-weight: 700; text-decoration: none;">
+                            &#128279; priyabratacare-source
+                        </a>
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- ================= SEO-FRIENDLY & SMOOTH FOOTER ================= -->
+<footer class="site-footer">
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+                <h3>Priyabrata Patra</h3>
+                <p>Civil Engineering Student &amp; Full-Stack Web/Mobile Developer committed to creating efficient, accessible, and high-performance digital and structural solutions.</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills &amp; Tools</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.linkedin.com/in/priyabrata-patra" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://github.com/priyabratacare-source" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="mailto:admin@codebihin.in">Email Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Priyabrata Patra. All rights reserved.</p>
+        </div>
+
+    </div>
+</footer>
+
+<!-- JavaScript for Smooth Mobile Menu Toggle -->
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mainMenu = document.getElementById('main-menu');
+
+    menuToggle.addEventListener('click', () => {
+        const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', !isOpen);
+        mainMenu.classList.toggle('is-active');
+    });
+</script>
+
+</body>
+</html>
